@@ -1,0 +1,73 @@
+Server Creation - using express
+--------------------------------
+
+install express : npm i express
+
+step 1: import express
+step 2: create an app using express
+step 3: create port number  (server port number will be in 3000 series)
+step 4: create requests according to our project
+
+nodemon server
+--------------
+
+-) npm install -g nodemon
+
+User Authentication using Express
+----------------------------------
+
+   JWT token - (Json Web Token)
+   ............................
+     jsonwebtoken   -library      npm i jsonwebtoken (installing command)
+     sign()         -method used for generate token
+     verify()       -method to verify jwt tokens
+
+Middlewares
+-----------
+-middlewares have the capacity to control server requests
+-its a function with 3 arguments  (request,response,next)
+
+2 types of Middlewares
+    1.Application Specific Middlewares
+    2.Router Specific Middlewares
+
+
+Solving runtime errors in javascript
+------------------------------------
+
+try  catch
+  
+    try{
+      error causing code
+    }
+
+    catch{
+      solution
+    }
+
+
+Mongo DB
+--------
+-Mongodb is unstructured
+-mongodb server
+-shell commands in mongodb
+............................      
+      1.to see the database -> show dbs
+      2.open database  -> use database_name
+      3.view collections inside database -> show collections
+      4.to view datas inside collections  -> db.collection_name.find()
+      5.to view any single data inside collections  -> db.collection_name.findOne({unique data to identify})
+      6.to insert new data  -> db.collection_name.insertOne({data})
+      7.to view any single data according to a condition  -> db.collection_name.findOne({condition})   -singledata
+                                                          ->db.collection_name.find({condition})       -all data
+      8.to delete single data   ->  db.collection_name.deleteOne({data})
+         
+          -delete count=number
+          -delete count=0   if nothing
+      9.to update  ->  db.collection_name.updateOne({data to be update},{new data})
+
+
+
+
+
+          crud - create read update delete
